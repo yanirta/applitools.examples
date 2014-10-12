@@ -2,3 +2,5 @@ Java/java.examples.userlibraries
 Java/.idea/workspace.xml
 Java/.target/
 *.class
+Ruby/.idea/
+Ruby/Gemfile.lock
