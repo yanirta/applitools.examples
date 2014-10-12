@@ -14,7 +14,7 @@ public class TestApplitoolsWebsite {
 
         Eyes eyes = new Eyes();
         // This is your api key, make sure you use it in all your tests.
-        eyes.setApiKey(APPLITOOLS_API_KEY);
+        eyes.setApiKey(APPLITOOLS_APIKEY);
 
         try {
             // Start visual testing with browser viewport set to 1024x768.

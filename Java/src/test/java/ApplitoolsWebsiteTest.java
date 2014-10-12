@@ -19,7 +19,7 @@ public class ApplitoolsWebsiteTest {
         driver_ = new FirefoxDriver();
         eyes_ = new Eyes();
         // This is your api key, make sure you use it in all your tests.
-        eyes_.setApiKey(APPLITOOLS_API_KEY);
+        eyes_.setApiKey(APPLITOOLS_APIKEY);
     }
 
     @Test
