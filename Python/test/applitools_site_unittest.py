@@ -1,0 +1,37 @@
+__author__ = 'Yanir Taflev'
+from applitools.eyes import Eyes
+from selenium import webdriver
+
+import unittest
+
+
+class Test(unittest.TestCase):
+    eyes = 0
+    driver = 0
+
+    def setUp(self):
+        self.eyes = Eyes()
+        self.eyes.api_key = APPLITOOLS_APIKEY
+        self.driver = webdriver.Firefox()
+
+    def tearDown(self):
+        self.eyes.abort_if_not_closed()
+        self.driver.quit()
+
+    def test(self):
+        # Start visual testing with browser viewport set to 1024x768.
+        # Make sure to use the returned driver from this point on.
+        self.driver = self.eyes.open(driver=self.driver, app_name='Applitools website', test_name='Example test',
+                                     viewport_size={'width': 900, 'height': 600})
+        self.driver.get('http://www.applitools.com')
+
+        # Visual validation point #1
+        self.eyes.check_window('Main Page')
+
+        self.driver.find_element_by_css_selector('.read_more').click()
+
+        # Visual validation point #2
+        self.eyes.check_window('Features Page')
+
+        # End visual testing. Validate visual correctness.
+        self.eyes.close()
