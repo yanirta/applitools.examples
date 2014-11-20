@@ -1,0 +1,32 @@
+{
+  "name": "applitools.protractor.example",
+  "version": "0.0.1",
+  "description": "An example of protractor test integrated with Applitools validation",
+  "main": "web_calculator_test.js",
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanirta/applitools.examples.git"
+  },
+  "keywords": [
+    "Applitools",
+    "Protractor",
+    "test",
+    "automation",
+    "validation",
+    "visual",
+    "ui",
+    "gui"
+  ],
+  "author": "Yanir Taflev @ Applitools",
+  "license": "Apache license",
+  "bugs": {
+    "url": "https://github.com/yanirta/applitools.examples/issues"
+  },
+  "homepage": "https://github.com/yanirta/applitools.examples",
+  "dependencies": {
+    "eyes.protractor": "0.0.25"
+  }
+}

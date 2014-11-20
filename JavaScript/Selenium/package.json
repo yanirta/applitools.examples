@@ -1,0 +1,34 @@
+{
+  "name": "applitools.selenium.example",
+  "version": "0.0.1",
+  "description": "An example of selenium automation integrated with Applitools validation",
+  "main": "test_applitools_website.js",
+  "scripts": {
+    "test": "node test_applitools_website.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanirta/applitools.examples.git"
+  },
+  "keywords": [
+    "Applitools",
+    "selenium",
+    "test",
+    "testing",
+    "gui",
+    "ui",
+    "visual",
+    "validation",
+    "validate"
+  ],
+  "author": "Yanir Taflev @ Applitools",
+  "license": "Apache license",
+  "bugs": {
+    "url": "https://github.com/yanirta/applitools.examples/issues"
+  },
+  "homepage": "https://github.com/yanirta/applitools.examples",
+  "dependencies": {
+    "eyes.selenium": "*",
+    "selenium-webdriver": "^2.44.0"
+  }
+}
