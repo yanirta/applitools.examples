@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/yanirta/applitools.examples",
   "dependencies": {
-    "eyes.protractor": "0.0.25"
+    "eyes.protractor": "0.0.26"
   }
 }
