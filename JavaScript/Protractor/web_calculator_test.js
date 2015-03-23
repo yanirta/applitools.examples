@@ -1,7 +1,10 @@
+/**
+ * Created by Yanir Taflev.
+ */
 var Eyes = require('eyes.protractor').Eyes;
 var eyes = new Eyes();
-eyes.setApiKey(APPLITOOLS_APIKEY);
-eyes.setBatch("MyBatch");
+eyes.setApiKey(YOUR_API_KEY);
+
 
 describe('angularjs homepage', function() {
     it('should add one and two', function() {
@@ -16,8 +19,9 @@ describe('angularjs homepage', function() {
         expect(element(by.binding('latest')).getText()).
             toEqual('3');
 
-        eyes.close(false).then(function(res){
-            console.log(res);
+        eyes.close(false).then(function (res) {
+            console.log(res); //Printing test results
         });
     });
 });
+
