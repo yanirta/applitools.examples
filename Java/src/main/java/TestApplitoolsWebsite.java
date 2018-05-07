@@ -1,5 +1,5 @@
-import com.applitools.eyes.Eyes;
 import com.applitools.eyes.RectangleSize;
+import com.applitools.eyes.selenium.Eyes;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -14,7 +14,6 @@ public class TestApplitoolsWebsite {
 
         Eyes eyes = new Eyes();
         // This is your api key, make sure you use it in all your tests.
-        eyes.setApiKey(APPLITOOLS_APIKEY);
 
         try {
             // Start visual testing with browser viewport set to 1024x768.

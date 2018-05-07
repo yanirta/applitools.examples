@@ -23,7 +23,7 @@
         </dependency>
         <dependency>
             <groupId>com.applitools</groupId>
-            <artifactId>eyes-selenium-java</artifactId>
+            <artifactId>eyes-selenium-java3</artifactId>
             <version>RELEASE</version>
         </dependency>
     </dependencies>
