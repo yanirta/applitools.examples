@@ -1,6 +1,8 @@
 
+import com.applitools.eyes.BatchInfo;
 import com.applitools.eyes.RectangleSize;
 import com.applitools.eyes.selenium.Eyes;
+import com.applitools.eyes.selenium.fluent.Target;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -16,6 +18,10 @@ public class ApplitoolsWebsiteTest {
     public void setup() {
         driver_ = new FirefoxDriver();
         eyes_ = new Eyes();
+        BatchInfo bi = new BatchInfo("Github integration check");
+        bi.setId("BatchId1");
+        eyes_.setBatch(bi);
+        eyes_.setBranchName("Branch1");
     }
 
     @Test
@@ -27,7 +33,7 @@ public class ApplitoolsWebsiteTest {
         driver_ = eyes_.open(driver_, "Applitools website", "Test Applitools homepage", new RectangleSize(900, 700));
 
         // Visual validation point #1
-        eyes_.checkWindow("Home Page");
+        eyes_.check("Homepage", Target.region(By.className("horizontal-page")));
 
         driver_.findElement(By.cssSelector("button")).click();
 
